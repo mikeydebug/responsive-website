@@ -180,9 +180,12 @@
         <div class="nav-logo">
           <img src="assets/Logo.png" alt="Logo" class="nav-logo__img" />
         </div>
-        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
-          <img src="assets/Menu.png" alt="menu" class="hamburger__icon" />
-        </button>
+        <div class="mobile-nav__actions">
+          <a href="#" class="btn btn--primary btn--contact mobile-nav__contact">Contact Us</a>
+          <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+            <img src="assets/Menu.png" alt="menu" class="hamburger__icon" />
+          </button>
+        </div>
       </div>
 
       <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
@@ -220,12 +223,10 @@
 
     <section class="mobile-hero">
       <h1 class="mobile-hero__heading">
-        Simplifying<br />
-        <span class="compliance-word compliance-word--mobile">
+        Simplifying <span class="compliance-word compliance-word--mobile">
           Compliance
           <img src="assets/underline-Vector.png" alt="" class="compliance-underline" />
-        </span> For<br />
-        Research Analysts
+        </span> For Research Analysts
       </h1>
       <p class="mobile-hero__subtext">
         Stay Focused On Your Insights—We'll Handle The Compliance. Our Expert
@@ -283,7 +284,10 @@
         Analysts And Firms Navigate Complex Compliance Requirements So They
         Can Focus On Delivering High-Quality Research Without Worry.
       </p>
-      <img src="assets/Section2-Image.png" alt="Research analyst working" class="mobile-why__illustration" />
+      <div class="mobile-why__illustration-wrap">
+        <img src="assets/Vector2.png" alt="" class="mobile-why__squiggle" />
+        <img src="assets/Section2-Image.png" alt="Research analyst working" class="mobile-why__illustration" />
+      </div>
       <div class="service-cards">
         <div class="service-card">
           <div class="service-card__icon-wrap">

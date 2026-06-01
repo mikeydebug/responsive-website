@@ -449,6 +449,9 @@ ul  { list-style: none; }
 }
 .hamburger__icon { width: 28px; height: 28px; object-fit: contain; }
 
+.mobile-nav__actions { display: flex; align-items: center; gap: 16px; }
+.mobile-nav__contact { display: none; }
+
 /* Mobile drawer */
 .mobile-menu {
   position: fixed;
@@ -526,6 +529,13 @@ ul  { list-style: none; }
   text-align: center;
   margin-bottom: 20px;
 }
+.mobile-hero .hero__checklist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  margin: 0 auto 32px;
+}
 .mobile-hero__cta-row {
   display: flex; flex-direction: column;
   gap: 12px; margin-top: 24px; margin-bottom: 32px;
@@ -591,10 +601,16 @@ ul  { list-style: none; }
   color: var(--text-body);
   text-align: center; margin-bottom: 32px;
 }
-.mobile-why__illustration {
+.mobile-why__illustration-wrap {
+  position: relative;
   width: 100%; max-width: 340px;
   margin: 0 auto 32px;
-  object-fit: contain;
+}
+.mobile-why__illustration {
+  width: 100%; object-fit: contain;
+}
+.mobile-why__squiggle {
+  display: none;
 }
 .mobile-why__arrows {
   width: 100px; opacity: 0.4;
@@ -607,10 +623,24 @@ ul  { list-style: none; }
 @media (min-width: 600px) and (max-width: 1024px) {
   .mobile-hero { padding: 40px 40px 0; }
   .mobile-hero__heading { font-size: 54px; line-height: 75px; }
-  .mobile-hero__cta-row { flex-direction: row; gap: 16px; }
+  .mobile-hero__cta-row { flex-direction: row; gap: 16px; justify-content: center; }
+  .mobile-hero__cta-row .btn { width: auto; flex: none; padding: 13px 28px; }
   .btn--full { width: auto; flex: 1; }
   .mobile-nav__inner { padding: 0 40px; }
+  .mobile-nav__contact { display: inline-flex; }
   .mobile-menu { width: 360px; }
+  .mobile-illustration-wrap { max-width: 460px; }
+  .hero__rating-badge--mobile { top: 40px; right: -20px; }
+  .hero__trusted-badge--mobile { bottom: 30px; left: -20px; }
   .mobile-why { padding: 60px 40px; }
   .mobile-why__heading { font-size: 46px; line-height: 60px; }
+  .mobile-why__illustration-wrap { max-width: 440px; }
+  .mobile-why__squiggle { 
+    display: block; 
+    position: absolute; 
+    top: -40px; 
+    right: -20px; 
+    width: 60px; 
+    opacity: 0.7; 
+  }
 }
