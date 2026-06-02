@@ -272,64 +272,10 @@ ul  { list-style: none; }
 }
 
 /* Rating badge — top-right */
-.hero__rating-badge {
-  position: absolute;
-  top: 40px; right: -20px;
-  background: rgba(255, 255, 255, 0.79);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 14px;
-  padding: 14px 20px;
-  box-shadow: 0 6px 24px rgba(67,86,214,0.14);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  z-index: 10;
-  min-width: 150px;
-}
-.rating-number {
-  font-size: 32px;
-  font-weight: 700;
-  color: var(--text-dark);
-  line-height: 1;
-}
-.rating-stars {
-  color: var(--gold);
-  font-size: 16px;
-  letter-spacing: 2px;
-  margin: 6px 0 4px;
-}
-.rating-label {
-  font-size: 14px;
-  color: var(--text-body);
-  font-weight: 400;
-}
+/* Badge CSS removed because it is baked into Banner Image.png */
 
 /* Trusted badge — bottom-left */
-.hero__trusted-badge {
-  position: absolute;
-  bottom: 30px; left: -30px;
-  background: rgba(255, 255, 255, 0.79);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 14px;
-  padding: 14px 20px;
-  box-shadow: 0 6px 24px rgba(67,86,214,0.14);
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  z-index: 10;
-  min-width: 180px;
-}
-.trusted-icon { width: 40px; height: 40px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
-.trusted-icon svg { width: 100%; height: 100%; }
-.trusted-text {
-  display: flex;
-  flex-direction: column;
-}
-.trusted-by    { font-size: 13px; color: var(--text-body); font-weight: 400; }
-.trusted-count { font-size: 24px; font-weight: 700; color: var(--blue-primary); line-height: 1.2; }
-.trusted-label { font-size: 13px; color: var(--text-body); font-weight: 400; }
+/* Badge CSS removed because it is baked into Banner Image.png */
 
 /* ============================================================
    SECTION 2 — WHY COMPLIANCE MATTERS
@@ -359,7 +305,7 @@ ul  { list-style: none; }
 
 .why-heading {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 70px;
   color: var(--black);
   margin-bottom: 12px;
@@ -570,28 +516,14 @@ ul  { list-style: none; }
 }
 
 /* Mobile badges */
-.hero__rating-badge--mobile {
-  top: 10px; right: -10px;
-  padding: 10px 14px;
-  min-width: 120px;
-}
-.hero__rating-badge--mobile .rating-number { font-size: 22px; }
-.hero__rating-badge--mobile .rating-stars  { font-size: 12px; }
-.hero__rating-badge--mobile .rating-label  { font-size: 12px; }
-
-.hero__trusted-badge--mobile {
-  bottom: 20px; left: -10px;
-  padding: 10px 14px;
-  min-width: 150px;
-}
-.hero__trusted-badge--mobile .trusted-count { font-size: 18px; }
+/* Badges removed */
 
 /* ============================================================
    MOBILE SECTION 2
    ============================================================ */
 .mobile-why { padding: 40px 20px; background: var(--white); }
 .mobile-why__heading {
-  font-size: 34px; font-weight: 700;
+  font-size: 34px; font-weight: 600;
   line-height: 48px;
   color: var(--black);
   text-align: center; margin-bottom: 20px;
@@ -631,10 +563,8 @@ ul  { list-style: none; }
   .mobile-nav__contact { display: inline-flex; }
   .mobile-menu { width: 360px; }
   .mobile-illustration-wrap { max-width: 460px; }
-  .hero__rating-badge--mobile { top: 40px; right: -20px; }
-  .hero__trusted-badge--mobile { bottom: 30px; left: -20px; }
   .mobile-why { padding: 60px 40px; }
-  .mobile-why__heading { font-size: 46px; line-height: 60px; }
+  .mobile-why__heading { font-size: 46px; font-weight: 600; line-height: 60px; }
   .mobile-why__illustration-wrap { max-width: 440px; }
   .mobile-why__squiggle { 
     display: block; 
@@ -644,4 +574,11 @@ ul  { list-style: none; }
     width: 60px; 
     opacity: 0.7; 
   }
+}
+
+/* ============================================================
+   MOBILE OVERRIDES (375px)
+   ============================================================ */
+@media (max-width: 599px) {
+  .service-card__title { font-size: 19px; }
 }
